@@ -5,6 +5,7 @@ variable "ssh_port" {
 
 variable "allowed_cidr_blocks" {
   description = "Alloowed IP ranges on Splunk connectivity rules"
+  default     = "84.207.213.0/24"
 }
 
 variable "network_address_space" {
@@ -33,6 +34,7 @@ variable "instance_type" {
 variable "ssh_key" {
   description = "This is the SSH public key that will be used for SSH access to the created instances"
   type        = string
+  default     = "ssh_key=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCqfo1VWxQHF5z1sLc+sWaaN7E864SApxr/SWTv9E+EbOWacxy5qnElXLL6Mkj4DxerhQl1UKunDOvanIe5IA1Ux76E5Sj2wi7eBqznzCGkqmHWnHJ37ZgBq9H8/q1yVgiilSQQXNOsbyTBh5G7H94vaQVtxSMEV5/kXldoAKS61762BQlM8yxhSm+Qj6YGOC6LevQNEKyK5xFUJjQxwVaUyBN88Ql1SdHPkYScKGZ1uCsFgioAwUMwDmkifxy4ZwTf60v9cdP83X3NjywU7MBmKYWU1m/8PiwzKZNHoMszEbfIwarNdeDHFkc1xjrihasC2SD+QvFMU8bvEc5RrY7D"
 }
 
 variable "ssh_key_name" {
