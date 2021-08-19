@@ -13,6 +13,7 @@ phases:
       - terraform version
       - terraform init
       - terraform apply
+      - yes
   post_build:
     commands:
       - terraform destroy
